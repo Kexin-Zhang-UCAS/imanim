@@ -1,11 +1,16 @@
-# imanim
+# Introduction: imanim
 render [manim](https://www.manim.community/) video (only support `.mp4` now) and display in jupyter.
-# dependance and installation
+# Dependance and Installation
 ```shell
 apt install sox ffmpeg libcairo2 libcairo2-dev
 apt install texlive-full
-# maybe you can conda create a new ENV
-pip3 install manimlib
+# install manimlib
+git clone https://github.com/3b1b/manim
+# or git clone https://hub.fastgit.org/3b1b/manim
+cd manim
+python setup.py sdist
+pip install dist/manimgl*.tar.gz
+# install imanimlib
 pip install imanim
 ```
 # Example
